@@ -10,6 +10,23 @@ Three pages:
 
 Shared styling: `styles.css`
 
+## Git (this folder is a repo)
+
+Git is initialized here with branch **`main`** and an initial commit. To put it on **your GitHub** (`revathyup`):
+
+1. On GitHub: **New repository** → name e.g. **`profile-website`** → **Public** → create **without** README (this folder already has files).
+2. In PowerShell:
+
+```powershell
+cd "c:\Users\upill\OneDrive\resumes and certificates\profile-website"
+git remote add origin https://github.com/revathyup/profile-website.git
+git push -u origin main
+```
+
+(Replace `profile-website` if you chose another repo name.)
+
+3. Enable **Pages**: repo **Settings → Pages →** Deploy from branch **`main`**, folder **`/ (root)`**.
+
 ## Preview locally
 
 Open `index.html` in your browser, or run a local server from this folder:
