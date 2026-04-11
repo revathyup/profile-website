@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Revathy Unnikrishna Pillai — Technical or customer success profile: embedded AI; banking CRM, retention, sales alignment in practice." />
+  <title>Revathy Unnikrishna Pillai — Profiles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo" aria-label="Home">RUP</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="technical.html">Technical profile</a>
+        <a href="customer-success.html">Customer success</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html">Home</a>
+      <a href="technical.html">Technical profile</a>
+      <a href="customer-success.html">Customer success</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-landing">
+      <div class="wrap">
+        <p class="eyebrow">Uppsala · Stockholm area · Open to hybrid</p>
+        <h1>Revathy Unnikrishna Pillai</h1>
+        <p class="tagline">Two professional profiles — pick the one that matches your role.</p>
+        <p class="lede narrow-lede">
+          I work across <strong>embedded &amp; AI systems</strong> and <strong>customer success</strong> (retention, regulated banking, CRM — with strong practical alignment to <strong>sales</strong> and account teams).
+          Send people to <strong>technical</strong> (engineering, ML, robotics) or <strong>customer success</strong> (service excellence, renewals, insight that supports <strong>sales</strong> conversations).
+        </p>
+        <p class="campus-note">
+          <strong>Campus placement (CUSAT):</strong> Letter of intent for <strong>Systems Engineer</strong> (Job Level 3), <strong>Infosys Ltd.</strong>, Mysore, through university recruitment.
+        </p>
+
+        <div class="chooser-grid">
+          <a href="technical.html" class="chooser-card chooser-tech">
+            <span class="chooser-label">For engineering &amp; research roles</span>
+            <h2 class="chooser-title">Technical profile</h2>
+            <p>Embedded C/C++, Python, real-time ML, Furhat robotics, sensors, APIs, IoT, GitHub portfolio, PCB design.</p>
+            <span class="chooser-cta">Open technical profile →</span>
+          </a>
+          <a href="customer-success.html" class="chooser-card chooser-cs">
+            <span class="chooser-label">For customer success &amp; retention</span>
+            <h2 class="chooser-title">Customer success</h2>
+            <p>Seven years in regulated banking: CRM-led resolution, trust and retention, onboarding, KYC/AML — insight account teams and sales can use.</p>
+            <span class="chooser-cta">Open customer success profile →</span>
+          </a>
+        </div>
+
+        <div class="hero-actions landing-actions">
+          <a class="btn ghost" href="mailto:upillairevathy@gmail.com">Email</a>
+          <a class="btn ghost" href="https://github.com/revathyup" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/revu01" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-cta">
+      <div class="wrap narrow cta-inner">
+        <h2 class="section-title">Contact</h2>
+        <p class="prose">
+          <a href="tel:+46764446379">+46 76 444 6379</a> · Upplands Väsby, Sweden<br />
+          <a href="mailto:upillairevathy@gmail.com">upillairevathy@gmail.com</a>
+        </p>
+        <p class="prose small-print">Full CV and university transcript available on request.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="y"></span> Revathy Unnikrishna Pillai.</p>
+      <p class="footer-links">
+        <a href="technical.html">Technical</a> · <a href="customer-success.html">Customer success</a> · <a href="index.html">Home</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    var btn = document.querySelector(".menu-toggle");
+    var panel = document.getElementById("mobile-nav");
+    if (btn && panel) {
+      btn.addEventListener("click", function () {
+        var open = panel.hasAttribute("hidden");
+        if (open) panel.removeAttribute("hidden");
+        else panel.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      panel.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          panel.setAttribute("hidden", "");
+          btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  </script>
+</body>
+</html>
