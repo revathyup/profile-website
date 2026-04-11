@@ -830,3 +830,27 @@ body.page-home {
   padding-top: 0.5rem;
   padding-bottom: 1.75rem;
 }
+
+/* Customer success — duty list under timeline */
+.duty-intro {
+  margin: 0.65rem 0 0.35rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+ul.duty-list {
+  margin: 0 0 0.25rem;
+  padding-left: 1.15rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--muted);
+  max-width: 40rem;
+}
+
+ul.duty-list li {
+  margin-bottom: 0.4rem;
+}
+
+ul.duty-list li strong {
+  color: var(--ink);
+}
