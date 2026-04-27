@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interactive portfolio for Revathy Unnikrishna Pillai: embedded testing, robotics, AI/audio, IoT, PCB, and customer/data operations projects." />
+  <title>Portfolio | Revathy Unnikrishna Pillai</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body class="page-tech page-portfolio">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo" aria-label="Home">RUP</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="technical.html">Technical</a>
+        <a href="customer-success.html">Customer success</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="technical.html">Technical</a>
+      <a href="customer-success.html">Customer success</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="portfolio-hero">
+      <div class="wrap portfolio-hero-grid">
+        <div class="portfolio-copy">
+          <p class="eyebrow">Interactive technical portfolio</p>
+          <h1>Embedded testing, robotics, AI/audio, and data operations in one place.</h1>
+          <p class="lede">A recruiter-friendly project page showing what I built, what I tested, and what each project proves in real engineering or operational work.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#project-lab">Explore projects</a>
+            <a class="btn ghost" href="https://github.com/revathyup" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+            <button class="btn ghost button-like" type="button" data-copy-link="https://revathyup.github.io/profile-website/portfolio.html">Copy portfolio link</button>
+          </div>
+        </div>
+        <div class="test-console" aria-label="Embedded testing visual summary">
+          <div class="console-head"><span></span><span></span><span></span><strong>verification-run</strong></div>
+          <div class="console-grid">
+            <div><b>HIL mindset</b><small>hardware + software behavior</small></div>
+            <div><b>Regression</b><small>repeatable checks</small></div>
+            <div><b>Signals</b><small>audio, sensors, APIs</small></div>
+            <div><b>Reports</b><small>clear findings</small></div>
+          </div>
+          <div class="signal-lines" aria-hidden="true">
+            <i style="--h: 38%"></i><i style="--h: 64%"></i><i style="--h: 48%"></i><i style="--h: 76%"></i><i style="--h: 52%"></i><i style="--h: 70%"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-dashboard">
+      <div class="wrap portfolio-kpi-grid">
+        <div class="portfolio-kpi"><span>Project clusters</span><strong>8</strong><p>Testing labs, robotics, AI/audio, embedded C, IoT, PCB, operations.</p></div>
+        <div class="portfolio-kpi"><span>Testing angle</span><strong>Strong</strong><p>Validation, debugging, repeatability, documentation.</p></div>
+        <div class="portfolio-kpi"><span>Best proof</span><strong>Furhat</strong><p>Hands-on product testing across sensors, APIs, and behavior.</p></div>
+      </div>
+    </section>
+
+    <section id="project-lab" class="section section-alt">
+      <div class="wrap">
+        <h2 class="section-title">Project lab</h2>
+        <p class="section-intro">Filter projects by domain. Each card explains the technical proof, not only the repository name.</p>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="testing" aria-pressed="false">Testing</button>
+          <button class="filter-button" type="button" data-filter="robotics" aria-pressed="false">Robotics</button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI / Audio</button>
+          <button class="filter-button" type="button" data-filter="embedded" aria-pressed="false">Embedded</button>
+          <button class="filter-button" type="button" data-filter="ops" aria-pressed="false">Data Ops</button>
+        </div>
+
+        <div class="portfolio-card-grid">
+          <article class="portfolio-project" data-tags="testing embedded">
+            <div class="project-visual state-visual"><span>DTC</span><span>Fault</span><span>Test</span><span>CI</span></div>
+            <div class="project-body">
+              <span class="project-kicker">Embedded testing</span>
+              <h3>ECU Test Automation Lab</h3>
+              <p>Hardware-free ECU-style test lab with diagnostic commands, signal checks, DTC handling, fault injection, and Pytest regression tests.</p>
+              <dl><div><dt>Proof</dt><dd>HIL/SIL thinking, automated validation, traceability, and robustness testing.</dd></div><div><dt>Stack</dt><dd>Python, Pytest, GitHub Actions, ECU-style simulation.</dd></div></dl>
+              <a href="https://github.com/revathyup/ECU_Test_Automation" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="testing iot">
+            <div class="project-visual cloud-visual"><span>App</span><span>API</span><span>EV</span></div>
+            <div class="project-body">
+              <span class="project-kicker">API contract testing</span>
+              <h3>EV Charging API Contract Testing Lab</h3>
+              <p>Consumer-provider API testing project using versioned JSON contracts for charger status and remote-start workflows.</p>
+              <dl><div><dt>Proof</dt><dd>Provider verification, negative tests, schema drift detection, and CI-ready test evidence.</dd></div><div><dt>Stack</dt><dd>Python, Pytest, JSON contracts, GitHub Actions.</dd></div></dl>
+              <a href="https://github.com/revathyup/EV_Charging_API_Contract_Testing" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="testing robotics embedded">
+            <div class="project-visual robot-visual"><span></span><span></span><span></span></div>
+            <div class="project-body">
+              <span class="project-kicker">Robotics / validation</span>
+              <h3>Furhat sensor and behavior integrations</h3>
+              <p>WebSocket sensor bridge, adaptive brightness logic, and internal display workflows for robot-facing use cases.</p>
+              <dl><div><dt>Proof</dt><dd>Hardware-software integration, testable behavior, API debugging.</dd></div><div><dt>Stack</dt><dd>Python, Kotlin, Node.js, WebSocket, sensors.</dd></div></dl>
+              <a href="https://github.com/revathyup/furhatrobot_Analogsensor_realtimeapi" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="ai testing robotics">
+            <div class="project-visual audio-visual"><span></span><span></span><span></span><span></span></div>
+            <div class="project-body">
+              <span class="project-kicker">AI / audio</span>
+              <h3>Emotion, active speaker, and DOA experiments</h3>
+              <p>Audio-visual work using face landmarks, prosody, microphone direction cues, and real-time speaker activity ideas.</p>
+              <dl><div><dt>Proof</dt><dd>Signal interpretation, ML experimentation, technical analysis.</dd></div><div><dt>Stack</dt><dd>Python, MediaPipe-style landmarks, audio cues.</dd></div></dl>
+              <a href="https://github.com/revathyup/Active_Speaker_Detection2" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="embedded testing">
+            <div class="project-visual state-visual"><span>Idle</span><span>Read</span><span>Act</span><span>Safe</span></div>
+            <div class="project-body">
+              <span class="project-kicker">Embedded C</span>
+              <h3>RP2040 state machine firmware</h3>
+              <p>Firmware using explicit state-machine structure for predictable embedded behavior and maintainable testing.</p>
+              <dl><div><dt>Proof</dt><dd>Low-level C, deterministic logic, embedded control flow.</dd></div><div><dt>Stack</dt><dd>C, Pico SDK, RP2040.</dd></div></dl>
+              <a href="https://github.com/revathyup/state_machines" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="embedded iot testing">
+            <div class="project-visual cloud-visual"><span>Device</span><span>MQTT</span><span>Cloud</span></div>
+            <div class="project-body">
+              <span class="project-kicker">IoT / cloud</span>
+              <h3>Smart cleaner and AWS home automation</h3>
+              <p>Device-to-cloud concepts using MQTT and AWS services for remote behavior and data-driven workflows.</p>
+              <dl><div><dt>Proof</dt><dd>System thinking across device, network, and cloud layers.</dd></div><div><dt>Stack</dt><dd>C++, Python, AWS IoT, Lambda, DynamoDB.</dd></div></dl>
+              <a href="https://github.com/revathyup/smart-cleaner" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="embedded pcb">
+            <div class="project-visual pcb-visual"><span></span><span></span><span></span><span></span></div>
+            <div class="project-body">
+              <span class="project-kicker">Hardware / PCB</span>
+              <h3>STM32 development board layouts</h3>
+              <p>MCU-centric PCB work in KiCad and Altium, from schematic thinking to board layout and documentation.</p>
+              <dl><div><dt>Proof</dt><dd>Electronics fundamentals and hardware-aware embedded thinking.</dd></div><div><dt>Stack</dt><dd>KiCad, Altium, STM32.</dd></div></dl>
+              <a href="https://github.com/revathyup/STM32_PCB-DESIGN-USING-KICAD" target="_blank" rel="noopener noreferrer">View repo</a>
+            </div>
+          </article>
+
+          <article class="portfolio-project" data-tags="ops testing">
+            <div class="project-visual ops-visual"><span>KYC</span><span>Case</span><span>Data</span><span>Close</span></div>
+            <div class="project-body">
+              <span class="project-kicker">Customer/data operations</span>
+              <h3>Digital banking support and workflow investigation</h3>
+              <p>6+ years supporting customers with online banking, card-service workflows, system-related queries, records, and operational follow-up.</p>
+              <dl><div><dt>Proof</dt><dd>Troubleshooting, data accuracy, escalation judgment, compliance, customer impact.</dd></div><div><dt>Stack</dt><dd>CRM, Excel, banking systems, documentation.</dd></div></dl>
+              <a href="customer-success.html">View profile</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section verification-section">
+      <div class="wrap verification-grid">
+        <div>
+          <h2 class="section-title">Embedded testing background</h2>
+          <p class="section-intro">How I approach verification work: define expected behavior, test across interfaces, document evidence, and keep the loop useful for engineering.</p>
+          <ol class="test-steps">
+            <li><strong>Requirement</strong><span>Clarify what the system should do and what signals prove it.</span></li>
+            <li><strong>Test setup</strong><span>Prepare hardware, APIs, logs, scripts, or repeatable manual steps.</span></li>
+            <li><strong>Execution</strong><span>Run functional, integration, regression, and exploratory checks.</span></li>
+            <li><strong>Analysis</strong><span>Separate product issues from setup issues and document root-cause patterns.</span></li>
+          </ol>
+        </div>
+        <div class="coverage-card" aria-label="Testing coverage chart">
+          <h3>Testing coverage signal</h3>
+          <div class="radial-wrap">
+            <div class="radial" style="--p: 86"><span>86%</span></div>
+            <p>Strongest proof is integration testing and system behavior validation.</p>
+          </div>
+          <div class="mini-bars">
+            <div><span>Integration</span><i style="--value: 90%"></i></div>
+            <div><span>Debugging</span><i style="--value: 84%"></i></div>
+            <div><span>Documentation</span><i style="--value: 88%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-cta">
+      <div class="wrap narrow cta-inner">
+        <h2 class="section-title">Contact</h2>
+        <p class="prose"><a href="mailto:upillairevathy@gmail.com">upillairevathy@gmail.com</a> / <a href="tel:+46764446379">+46 76 444 6379</a></p>
+        <p class="prose small-print">Portfolio, CV, and transcript available for technical or customer-facing roles.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Copyright <span id="y"></span> Revathy Unnikrishna Pillai / Portfolio</p>
+      <p class="footer-links"><a href="index.html">Home</a> / <a href="technical.html">Technical</a> / <a href="customer-success.html">Customer success</a></p>
+    </div>
+  </footer>
+  <script src="interactions.js"></script>
+</body>
+</html>
+

@@ -1,20 +1,22 @@
-# Professional profile website
+﻿# Professional profile website
 
 Three pages:
 
-| File | Use |
-|------|-----|
-| `index.html` | **Home** — short intro + two big links to the profiles |
-| `technical.html` | **Technical** — embedded, ML, robotics, GitHub, projects |
-| `customer-success.html` | **Customer success** — banking, CRM, retention, KYC/AML (sales alignment in copy) |
+
+| File                    | Use                                                                               |
+| ----------------------- | --------------------------------------------------------------------------------- |
+| `index.html`            | **Home** - short intro + two big links to the profiles                            |
+| `technical.html`        | **Technical** - embedded, ML, robotics, GitHub, projects                          |
+| `customer-success.html` | **Customer success** - banking, CRM, retention, KYC/AML (sales alignment in copy) |
+
 
 Shared styling: `styles.css`
 
 ## Git (this folder is a repo)
 
-Git is initialized here with branch **`main`** and an initial commit. To put it on **your GitHub** (`revathyup`):
+Git is initialized here with branch `**main`** and an initial commit. To put it on **your GitHub** (`revathyup`):
 
-1. On GitHub: **New repository** → name e.g. **`profile-website`** → **Public** → create **without** README (this folder already has files).
+1. On GitHub: **New repository** -> name e.g. `**profile-website`** -> **Public** -> create **without** README (this folder already has files).
 2. In PowerShell:
 
 ```powershell
@@ -25,7 +27,7 @@ git push -u origin main
 
 (Replace `profile-website` if you chose another repo name.)
 
-3. Enable **Pages**: repo **Settings → Pages →** Deploy from branch **`main`**, folder **`/ (root)`**.
+1. Enable **Pages**: repo **Settings -> Pages ->** Deploy from branch `**main`**, folder `**/ (root)**`.
 
 ## Preview locally
 
@@ -49,3 +51,5 @@ Upload **all three HTML files** plus `styles.css` to the repo root, then enable 
 
 - Text: each `.html` file
 - Colours: `styles.css` (`page-tech` vs `page-cs` use different accent colours)
+
+
