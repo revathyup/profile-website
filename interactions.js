@@ -26,15 +26,15 @@
   var personaCopy = {
     embedded: {
       title: "Embedded / Test Engineer",
-      text: "Lead with embedded systems, Python/C, sensor integration, Linux, structured testing, debugging, and Furhat Robotics validation work."
+      text: "Start with hardware-aware debugging, C/Python, sensors, Linux, repeatable tests, and Furhat validation work."
     },
     dataops: {
-      title: "Customer + Data Operations",
-      text: "Lead with digital banking support, customer data accuracy, system-query troubleshooting, process compliance, and technical collaboration with product/engineering teams."
+      title: "Data Operations",
+      text: "Start with banking operations, data accuracy, case investigation, process controls, and technical support habits."
     },
     ai: {
-      title: "AI / Technical Analyst",
-      text: "Lead with MSc Embedded Systems, Python, ML/audio projects, data interpretation, automation curiosity, and practical system validation."
+      title: "AI / Robotics",
+      text: "Start with Furhat robotics, audio/signal experiments, Python, data interpretation, and practical system validation."
     }
   };
 
